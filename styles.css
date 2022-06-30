@@ -1,5 +1,6 @@
 body{
-    font-family: 'Roboto', Arial, Helvetica, sans-serif
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: lightgray;
 }
 
 .container{
@@ -53,8 +54,8 @@ body{
     grid-column: 2/3;
     grid-row: 2/3;
     display:grid;
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: 1fr 5fr 1fr 4fr;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 7fr 1fr 6fr;
     background-color: lightgrey;
     padding: 10px;
 }
@@ -84,6 +85,24 @@ body{
     border-bottom-left-radius: 5px;
 }
 
+.cardContent{
+    display: grid;
+    grid-template-rows: 25px 1fr 25px;
+    padding: 10px; 
+}
+
+.cardContent .title{
+    font-size: 18px;
+    font-weight: 450;
+}
+
+.rss-buttons{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 15px;
+}
+
 /*.side-stuff{
     display: grid;
     grid-
@@ -101,7 +120,35 @@ body{
     grid-column: 2/3;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 9fr 1fr;
+    background-color: white;
+    border-radius: 5px;
 }
+
+.left-border
+.right-border{
+    grid-row: 1/4;
+}
+
+.left-border{
+    grid-column: 1/2;
+}
+
+.right-border{
+    grid-column: 3/4;
+}
+
+.announcer{
+    grid-column: 2/3;
+    border-bottom: 1px solid gray;
+}
+
+.announcer-three{
+    grid-column: 2/3;
+    border-bottom: 0px solid white;;
+}
+
+
 
 #trending-title{
     grid-row: 3/4;
@@ -113,6 +160,8 @@ body{
     grid-column: 2/3;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    background-color: white;
+    border-radius: 5px;
 }
 ul{
     list-style: none;
